@@ -6,7 +6,7 @@ public class NextDate {
     public static String getNextDate(int yy, int mm, int dd) {
         boolean is_leap = (yy % 4 == 0 && yy % 100 != 0) || yy % 400 == 0;
 
-        if (yy <= 0 || mm <= 0 || dd <= 0) {
+        if (yy < 1820 || yy > 2020 || mm <= 0 || dd <= 0) {
             throw new IllegalArgumentException("输入的日期不合法");
         } else if (mm > 12 || dd > 31) {
             throw new IllegalArgumentException("输入的日期不合法");
