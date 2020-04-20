@@ -86,8 +86,8 @@ public class NextDateTest {
     }
 
     @Test
-    public void test() {
-        List<MyDate> s = readTestCase("/cases/nextDate.json");
+    public void boundary_test() {
+        List<MyDate> s = readTestCase("/cases/boundary-nextDate.json");
 
         for (MyDate c : s) {
             String nextDate = null;

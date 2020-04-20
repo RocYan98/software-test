@@ -86,8 +86,8 @@ public class TriangularTest {
     }
 
     @Test
-    public void test() {
-        List<TestCase> s = readTestCase("/cases/triangular.json");
+    public void boundary_test() {
+        List<TestCase> s = readTestCase("/cases/boundary-triangular.json");
 
         for (TestCase c : s) {
             Triangular.TriangularType type = null;
@@ -101,4 +101,5 @@ public class TriangularTest {
             System.out.println(" 通过");
         }
     }
+
 }
