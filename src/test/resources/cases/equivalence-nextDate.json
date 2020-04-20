@@ -1,0 +1,51 @@
+[
+  {
+    "id": 0,
+    "yy": 1920,
+    "mm": 6,
+    "dd": 15,
+    "nextDate": "1920-6-16"
+  },
+  {
+    "id": 1,
+    "yy": 1920,
+    "mm": -1,
+    "dd": 15,
+    "nextDate": null
+  },
+  {
+    "id": 2,
+    "yy": 1920,
+    "mm": 13,
+    "dd": 15,
+    "nextDate": null
+  },
+  {
+    "id": 3,
+    "yy": 1920,
+    "mm": 6,
+    "dd": -1,
+    "nextDate": null
+  },
+  {
+    "id": 4,
+    "yy": 1920,
+    "mm": 6,
+    "dd": 32,
+    "nextDate": null
+  },
+  {
+    "id": 5,
+    "yy": 1819,
+    "mm": 6,
+    "dd": 15,
+    "nextDate": null
+  },
+  {
+    "id": 5,
+    "yy": 2021,
+    "mm": 6,
+    "dd": 15,
+    "nextDate": null
+  }
+]

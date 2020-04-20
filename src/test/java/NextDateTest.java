@@ -101,4 +101,21 @@ public class NextDateTest {
             System.out.println(" 通过");
         }
     }
+
+    @Test
+    public void equivalence_test() {
+        List<MyDate> s = readTestCase("/cases/equivalence-nextDate.json");
+
+        for (MyDate c : s) {
+            String nextDate = null;
+            try {
+                nextDate = NextDate.getNextDate(c.yy, c.mm, c.dd);
+            } catch (IllegalArgumentException e) {
+            }
+
+            System.out.print("case id:" + c.id);
+            assertEquals(c.nextDate, nextDate);
+            System.out.println(" 通过");
+        }
+    }
 }

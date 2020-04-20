@@ -102,4 +102,21 @@ public class TriangularTest {
         }
     }
 
+    @Test
+    public void equivalence_test() {
+        List<TestCase> s = readTestCase("/cases/equivalence-triangular.json");
+
+        for (TestCase c : s) {
+            Triangular.TriangularType type = null;
+            try {
+                type = Triangular.deduce(c.x, c.y, c.z);
+            } catch (IllegalArgumentException e) {
+            }
+
+            System.out.print("case id:" + c.id);
+            assertEquals(c.type, type);
+            System.out.println(" 通过");
+        }
+    }
+
 }
